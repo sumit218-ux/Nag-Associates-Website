@@ -5,9 +5,12 @@ A responsive one-page website for **Nag & Associates Survey Consultancy** (Ranig
 ## Structure
 
 ```
-index.html          Page content (all sections)
+index.html          Main website (all sections)
+landing.html        Marketing landing page (hero, features, testimonials, pricing, CTA)
 css/styles.css      Styles, colour tokens and responsive layout
 js/main.js          Mobile menu, scroll effects, contact form
+css/landing.css     Landing page styles
+js/landing.js       Landing page menu, animations, quote form
 assets/favicon.svg  Site icon
 ```
 
@@ -25,6 +28,13 @@ python3 -m http.server 8000
 
 Then visit http://localhost:8000.
 
+## Landing page placeholders
+
+`landing.html` has two sections to finish before publishing (both marked with `TODO` comments):
+
+- **Testimonials:** replace the three sample quotes with real client feedback (with permission).
+- **Pricing:** replace `₹ —` with your starting prices, or change it to "On request".
+
 ## Editing notes
 
 - **Contact details** appear in the Contact section and footer of `index.html`; the form recipient is `RECIPIENT` in `js/main.js`.
@@ -37,4 +47,4 @@ As a static site it can be hosted on GitHub Pages (Settings → Pages → deploy
 
 ## Single-file demo
 
-`demo/nag-associates-demo.html` is the whole site bundled into one file (CSS and JS inlined) so it can be opened or shared on its own. It is a generated copy: edit `index.html`, `css/` and `js/`, then regenerate the demo.
+`demo/nag-associates-demo.html` (main site) and `demo/landing-demo.html` (landing page) are each bundled into one file (CSS and JS inlined) so it can be opened or shared on its own. It is a generated copy: edit `index.html`, `css/` and `js/`, then regenerate the demo.
