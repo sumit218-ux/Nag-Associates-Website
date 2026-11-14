@@ -32,7 +32,7 @@
   });
 
   // Reveal-on-scroll animation
-  var revealTargets = document.querySelectorAll(".card, .steps li, .member, .section-head, .split > *");
+  var revealTargets = document.querySelectorAll(".card, .section-head, .split > *, .sister, .tech-inner > *");
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -53,30 +53,32 @@
   // Formspree or Netlify Forms (see README).
   var form = document.getElementById("contact-form");
   var status = form.querySelector(".form-status");
-  var RECIPIENT = "info@example.com";
+  var RECIPIENT = "nag_associates@outlook.com";
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var ok = true;
-    ["name", "email", "message"].forEach(function (id) {
+    ["name", "phone", "email", "message"].forEach(function (id) {
       var input = form.elements[id];
-      var valid = input.value.trim() !== "" && input.checkValidity();
+      var empty = input.value.trim() === "";
+      var valid = input.required ? !empty && input.checkValidity() : (empty || input.checkValidity());
       input.closest(".field").classList.toggle("invalid", !valid);
       if (!valid) ok = false;
     });
 
     if (!ok) {
       status.className = "form-status err";
-      status.textContent = "Please fill in your name, a valid email and a message.";
+      status.textContent = "Please fill in your name, phone number and a message (and a valid email if given).";
       return;
     }
 
     var d = form.elements;
-    var subject = "Website enquiry: " + d.service.value;
+    var subject = "Website enquiry - " + d.service.value;
     var body =
       "Name: " + d.name.value + "\n" +
+      "Phone: " + d.phone.value + "\n" +
       "Email: " + d.email.value + "\n" +
-      "Phone: " + d.phone.value + "\n\n" +
+      "Site location: " + d.location.value + "\n\n" +
       d.message.value;
     window.location.href =
       "mailto:" + RECIPIENT +

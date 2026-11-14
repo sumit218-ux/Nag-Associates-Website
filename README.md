@@ -1,6 +1,6 @@
-# Nag & Associates Website
+# Nag & Associates Survey Consultancy Website
 
-A responsive one-page website for Nag & Associates (Chartered Accountants & Business Advisors), built from scratch with plain HTML, CSS and JavaScript. It needs no build step or dependencies.
+A responsive one-page website for **Nag & Associates Survey Consultancy** (Raniganj, Paschim Bardhaman, West Bengal) and its sister concern **Aadrita Buildcon LLP**, built with plain HTML, CSS and JavaScript. It needs no build step or dependencies.
 
 ## Structure
 
@@ -13,7 +13,7 @@ assets/favicon.svg  Site icon
 
 ## Sections
 
-Header and navigation · Hero · About · Services · Approach · Team · Call to action · Contact form · Footer
+Header · Hero ("Precision Today, Progress Tomorrow") · Values strip · About · Survey & mapping services · Technology · Aadrita Buildcon LLP (sister concern) · Call to action · Contact form · Footer
 
 ## Preview locally
 
@@ -25,12 +25,11 @@ python3 -m http.server 8000
 
 Then visit http://localhost:8000.
 
-## Replace before going live
+## Editing notes
 
-- **Contact details** (`index.html`, Contact section): address, phone and email.
-- **Form recipient** (`js/main.js`): the `RECIPIENT` email address. The form currently opens the visitor's email app. To receive submissions directly, set the form's `action` to a service such as Formspree or Netlify Forms and remove the `mailto` handler.
-- **Team** (`index.html`, Team section): partner names, roles, bios, and photos (replace the `.avatar` initials with `<img>` tags).
-- **Brand colours** (`css/styles.css`, `:root`): `--navy` and `--gold`.
+- **Contact details** appear in the Contact section and footer of `index.html`; the form recipient is `RECIPIENT` in `js/main.js`.
+- The contact form opens the visitor's email app with the enquiry filled in. To receive submissions directly, set the form's `action` to a service such as Formspree or Netlify Forms and remove the `mailto` handler.
+- **Brand colours** live in `css/styles.css` under `:root` (`--navy`, `--saffron`, `--green`).
 
 ## Deploy
 
