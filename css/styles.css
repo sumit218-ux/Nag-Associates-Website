@@ -277,3 +277,28 @@ p { margin: 0 0 1em; }
   .hero-actions .btn { flex: 1 1 100%; }
   .footer-motto { font-size: .8rem; letter-spacing: .05em; }
 }
+
+/* ========== Survey CTA card ========== */
+.card-cta { background: var(--navy); border-color: var(--navy); text-decoration: none; display: flex; flex-direction: column; justify-content: center; }
+.card-cta h3 { color: #fff; }
+.card-cta p { color: #c9d3e6; }
+.card-cta-link { margin-top: 16px; color: var(--saffron); font-weight: 700; }
+
+/* ========== Plans & printing panels ========== */
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.panel { border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; background: #fff; box-shadow: var(--shadow); }
+.panel-title { display: flex; align-items: center; gap: 10px; font: 600 1.35rem/1.2 var(--font-head); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 20px; }
+.dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+.dot-saffron { background: var(--saffron); }
+.dot-green { background: var(--green); }
+.ticks { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.ticks li { position: relative; padding: 11px 0 11px 30px; border-bottom: 1px dashed var(--line); font-weight: 500; }
+.ticks li:last-child { border-bottom: 0; }
+.ticks li::before {
+  content: ""; position: absolute; left: 0; top: 14px; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--green-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f7a3a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-9'/%3E%3C/svg%3E") center/12px no-repeat;
+}
+@media (max-width: 760px) {
+  .panels { grid-template-columns: 1fr; }
+  .panel { padding: 24px 20px; }
+}

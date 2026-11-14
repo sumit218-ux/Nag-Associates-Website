@@ -13,7 +13,7 @@ assets/favicon.svg  Site icon
 
 ## Sections
 
-Header · Hero ("Precision Today, Progress Tomorrow") · Values strip · About · Survey & mapping services · Technology · Aadrita Buildcon LLP (sister concern) · Call to action · Contact form · Footer
+Header · Hero ("Precision Today, Progress Tomorrow") · Values strip · About · Survey & mapping services · Plans, approvals & printing · Technology · Aadrita Buildcon LLP (sister concern) · Call to action · Contact form · Footer
 
 ## Preview locally
 
