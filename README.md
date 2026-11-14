@@ -34,3 +34,7 @@ Then visit http://localhost:8000.
 ## Deploy
 
 As a static site it can be hosted on GitHub Pages (Settings → Pages → deploy from branch), Netlify, Vercel, or any shared web host.
+
+## Single-file demo
+
+`demo/nag-associates-demo.html` is the whole site bundled into one file (CSS and JS inlined) so it can be opened or shared on its own. It is a generated copy: edit `index.html`, `css/` and `js/`, then regenerate the demo.
