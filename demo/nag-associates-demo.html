@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nag &amp; Associates Survey Consultancy | Raniganj, West Bengal</title>
+  <meta name="description" content="Nag & Associates Survey Consultancy, Raniganj – digital survey & printing solution: engineering, land & mines, topographic, contour, mouza plot and drone surveys with Total Station & GPS; building, site and conversion plans for ADDA NOC; A0+ printing. Sister concern: Aadrita Buildcon LLP.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%2314295a%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23f07a1c%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2216%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%224%22/%3E%3Cpath%20d%3D%22M32%208v12M32%2044v12M8%2032h12M44%2032h12%22/%3E%3C/g%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+/* ========== Tokens ========== */
+:root {
+  --navy: #14295a;
+  --navy-deep: #0c1c40;
+  --saffron: #f07a1c;
+  --saffron-soft: #fff1e4;
+  --green: #1f7a3a;
+  --green-soft: #e8f4ec;
+  --ink: #1b2433;
+  --muted: #5a6577;
+  --line: #e2e6ec;
+  --bg: #ffffff;
+  --bg-alt: #f5f7fa;
+  --radius: 14px;
+  --shadow: 0 12px 32px rgba(20, 41, 90, 0.09);
+  --max: 1180px;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-head: "Oswald", "Arial Narrow", Impact, sans-serif;
+}
+
+/* ========== Base ========== */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  margin: 0; font-family: var(--font-sans); font-size: 16px; line-height: 1.65;
+  color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: var(--navy); }
+h1, h2, h3 { color: var(--navy); line-height: 1.2; margin: 0 0 .5em; }
+h1, h2 { font-family: var(--font-head); font-weight: 600; letter-spacing: .01em; }
+h1 { font-size: clamp(2.3rem, 4.6vw, 3.6rem); }
+h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+h3 { font-size: 1.1rem; font-weight: 700; }
+p { margin: 0 0 1em; }
+
+.container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+.skip-link { position: absolute; left: -999px; top: 8px; background: var(--navy); color: #fff; padding: 8px 14px; border-radius: 6px; z-index: 100; }
+.skip-link:focus { left: 8px; }
+:focus-visible { outline: 3px solid var(--saffron); outline-offset: 2px; }
+
+.tricolor { display: flex; height: 5px; }
+.tricolor span { flex: 1; }
+.tricolor span:nth-child(1) { background: var(--saffron); }
+.tricolor span:nth-child(2) { background: #fff; }
+.tricolor span:nth-child(3) { background: var(--green); }
+
+.eyebrow {
+  font-size: .8rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--green); margin-bottom: .75em;
+}
+
+/* ========== Buttons ========== */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 14px 26px; border-radius: 8px; border: 2px solid var(--saffron);
+  background: var(--saffron); color: #fff; font: 600 .95rem/1 var(--font-sans);
+  text-decoration: none; cursor: pointer; transition: background .2s, color .2s, transform .2s, border-color .2s;
+}
+.btn:hover { background: #d9650b; border-color: #d9650b; transform: translateY(-1px); }
+.btn-ghost { background: transparent; color: var(--navy); border-color: var(--navy); }
+.btn-ghost:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
+.btn-light { background: #fff; color: var(--navy); border-color: #fff; }
+.btn-light:hover { background: var(--saffron-soft); border-color: var(--saffron-soft); color: var(--navy); }
+.btn-small { padding: 10px 18px; font-size: .9rem; }
+.btn-block { width: 100%; }
+
+/* ========== Header ========== */
+.site-header {
+  position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .2s, box-shadow .2s;
+}
+.site-header.scrolled { border-color: var(--line); box-shadow: 0 4px 18px rgba(20, 41, 90, .07); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand-mark { width: 44px; height: 44px; border-radius: 10px; background: var(--navy); display: grid; place-items: center; flex-shrink: 0; }
+.brand-mark svg { width: 30px; height: 30px; fill: none; stroke: var(--saffron); stroke-width: 2.5; stroke-linecap: round; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+.brand-text strong { font: 700 1.3rem/1.1 var(--font-head); color: var(--navy); text-transform: uppercase; letter-spacing: .02em; }
+.brand-text small { font-size: .72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--green); }
+
+.site-nav { display: flex; align-items: center; gap: 26px; }
+.site-nav a:not(.btn) { text-decoration: none; color: var(--ink); font-weight: 500; font-size: .95rem; }
+.site-nav a:not(.btn):hover { color: var(--saffron); }
+
+.nav-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; }
+.nav-toggle span { display: block; width: 24px; height: 2px; background: var(--navy); margin: 5px 0; transition: transform .25s, opacity .25s; }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ========== Hero ========== */
+.hero {
+  background:
+    radial-gradient(700px 360px at 0% 0%, var(--saffron-soft), transparent 70%),
+    radial-gradient(700px 360px at 100% 100%, var(--green-soft), transparent 70%),
+    #fbfcfd;
+  padding: 80px 0 72px;
+}
+.hero-inner { display: grid; grid-template-columns: 1.25fr 1fr; gap: 48px; align-items: center; }
+.tagline-pill {
+  display: inline-block; background: var(--navy); color: #fff; font-size: .78rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; padding: 8px 16px; border-radius: 4px;
+  border-left: 4px solid var(--saffron); border-right: 4px solid var(--saffron);
+}
+.lead { font-size: 1.12rem; color: var(--muted); max-width: 36em; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+
+.hero-visual { position: relative; background: var(--navy); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.contour-art { width: 100%; height: auto; }
+.contour-art g:first-child path { stroke: rgba(255, 255, 255, .55); }
+.contour-art g:first-child path:nth-child(odd) { stroke: rgba(240, 122, 28, .8); }
+.contour-art .grid path { stroke: rgba(255, 255, 255, .08); }
+.contour-art .pins circle { fill: #fff; }
+.contour-art .pins circle:first-child { fill: var(--saffron); }
+.contour-art .crosshair { stroke: #6fd08f; }
+.hero-badge {
+  position: absolute; left: -20px; bottom: -22px; background: #fff; border-radius: 12px;
+  padding: 14px 18px; box-shadow: var(--shadow); border-left: 4px solid var(--green);
+}
+.hero-badge strong { display: block; color: var(--navy); font-size: .95rem; }
+.hero-badge span { color: var(--muted); font-size: .85rem; }
+
+/* ========== Values strip ========== */
+.values { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fff; }
+.values-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.value { display: flex; align-items: center; gap: 14px; padding: 26px 20px; font-weight: 700; color: var(--navy); text-transform: uppercase; font-size: .88rem; letter-spacing: .04em; }
+.value + .value { border-left: 1px solid var(--line); }
+.value svg { width: 36px; height: 36px; flex-shrink: 0; fill: none; stroke: var(--saffron); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ========== Sections ========== */
+.section { padding: 92px 0; }
+.section-alt { background: var(--bg-alt); }
+.section-head { max-width: 640px; margin-bottom: 44px; }
+.section-head p:last-child { color: var(--muted); }
+.split { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start; }
+.prose p { color: var(--muted); }
+.prose a { color: var(--green); font-weight: 600; }
+
+/* Cards */
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.card {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 26px;
+  transition: transform .25s, box-shadow .25s, border-color .25s; border-top: 3px solid transparent;
+}
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-top-color: var(--saffron); }
+.card p { color: var(--muted); margin: 0; font-size: .95rem; }
+.card-icon { width: 50px; height: 50px; border-radius: 12px; background: var(--saffron-soft); display: grid; place-items: center; margin-bottom: 18px; }
+.card-icon svg { width: 26px; height: 26px; fill: none; stroke: var(--saffron); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Technology */
+.tech { background: var(--navy); color: #c9d3e6; }
+.tech h2 { color: #fff; }
+.tech .eyebrow { color: var(--saffron); }
+.tech-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.tech-lead { font-size: 1.05rem; }
+.tech-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.tech-list li {
+  border: 1px solid rgba(255, 255, 255, .18); border-radius: 10px; padding: 18px 20px;
+  color: #fff; font: 600 1.05rem/1.2 var(--font-head); text-transform: uppercase; letter-spacing: .06em;
+  position: relative; padding-left: 40px;
+}
+.tech-list li::before { content: ""; position: absolute; left: 18px; top: 50%; width: 10px; height: 10px; margin-top: -5px; border-radius: 50%; background: var(--saffron); box-shadow: 0 0 0 4px rgba(240, 122, 28, .25); }
+.tech-list li:nth-child(even)::before { background: #3fb466; box-shadow: 0 0 0 4px rgba(63, 180, 102, .25); }
+
+/* Sister concern */
+.sister {
+  display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center;
+  background: linear-gradient(135deg, var(--green-soft), #fff 70%); border: 1px solid #cfe5d6;
+  border-radius: 22px; padding: 56px;
+}
+.sister-head > p:last-child { color: var(--muted); }
+.aadrita-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.aadrita-logo svg { width: 52px; height: 52px; }
+.aadrita-logo .b1 { fill: var(--navy); }
+.aadrita-logo .b2 { fill: var(--green); }
+.aadrita-logo .b3 { fill: #2f9a52; }
+.aadrita-logo strong { display: block; font: 700 1.6rem/1 var(--font-head); color: var(--navy); text-transform: uppercase; letter-spacing: .03em; }
+.aadrita-logo span { display: block; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: .12em; font-size: .85rem; margin-top: 2px; }
+.sister-services { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.sister-services article { background: #fff; border-radius: 12px; padding: 22px; border-left: 4px solid var(--green); box-shadow: 0 6px 18px rgba(31, 122, 58, .07); }
+.sister-services h3 { margin-bottom: .35em; }
+.sister-services p { margin: 0; color: var(--muted); font-size: .93rem; }
+
+/* CTA band */
+.cta-band { background: linear-gradient(90deg, var(--saffron), #e0620a); padding: 56px 0; }
+.cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.cta-band h2 { color: #fff; margin: 0 0 .2em; text-transform: uppercase; }
+.cta-band p { color: #fff; margin: 0; font-weight: 600; font-size: 1.1rem; }
+
+/* Contact */
+.contact-list { list-style: none; padding: 0; margin: 32px 0 0; display: grid; gap: 22px; }
+.contact-list li { display: flex; gap: 16px; align-items: flex-start; }
+.c-icon { width: 46px; height: 46px; border-radius: 50%; background: var(--navy); display: grid; place-items: center; flex-shrink: 0; }
+.c-icon svg { width: 22px; height: 22px; fill: none; stroke: #fff; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.contact-list .label { display: block; font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--saffron); }
+.contact-list a { text-decoration: none; font-weight: 600; word-break: break-word; }
+
+.contact-form { background: var(--bg-alt); border-radius: var(--radius); padding: 34px; display: grid; gap: 16px; border-top: 4px solid var(--navy); }
+.field { display: grid; gap: 6px; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field label { font-weight: 600; font-size: .9rem; }
+.field input, .field select, .field textarea {
+  width: 100%; font: inherit; color: var(--ink); background: #fff;
+  border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; transition: border-color .2s, box-shadow .2s;
+}
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--saffron); box-shadow: 0 0 0 3px rgba(240, 122, 28, .2); }
+.field.invalid input, .field.invalid textarea { border-color: #c0392b; }
+.form-status { margin: 0; font-size: .95rem; min-height: 1.5em; }
+.form-status.ok { color: var(--green); }
+.form-status.err { color: #c0392b; }
+
+/* Footer */
+.site-footer { background: var(--navy-deep); color: #b8c3d8; padding-top: 56px; }
+.footer-brands { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding-bottom: 40px; }
+.f-brand strong { display: block; font: 700 1.2rem/1.2 var(--font-head); color: #fff; text-transform: uppercase; letter-spacing: .04em; }
+.f-sub { display: inline-block; margin-top: 6px; background: var(--saffron); color: #fff; font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; }
+.f-sub.green { background: var(--green); }
+.f-brand p { margin: 14px 0 0; font-size: .92rem; }
+.f-brand a { color: #e2e8f3; text-decoration: none; }
+.f-brand a:hover { color: var(--saffron); }
+.footer-motto { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; color: #fff; font: 600 1rem/1 var(--font-head); text-transform: uppercase; letter-spacing: .1em; }
+.footer-motto span { padding: 16px 8px; }
+.footer-motto span:nth-child(1) { background: var(--saffron); }
+.footer-motto span:nth-child(2) { background: #1d3a7a; }
+.footer-motto span:nth-child(3) { background: var(--green); }
+.footer-bottom { padding-top: 20px; padding-bottom: 20px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: .85rem; }
+.footer-bottom p { margin: 0; }
+
+/* Reveal on scroll */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  * { transition: none !important; }
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1020px) {
+  .site-nav { gap: 18px; }
+  .site-nav a:not(.btn) { font-size: .9rem; }
+}
+@media (max-width: 960px) {
+  .hero-inner, .split, .tech-inner, .sister { grid-template-columns: 1fr; gap: 40px; }
+  .hero-visual { max-width: 520px; }
+  .hero-badge { left: 16px; }
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .values-grid { grid-template-columns: repeat(2, 1fr); }
+  .value:nth-child(3) { border-left: 0; }
+  .value:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .sister { padding: 40px; }
+  .footer-brands { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 860px) {
+  .nav-toggle { display: block; }
+  .site-nav {
+    position: absolute; top: 76px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0;
+    background: #fff; border-bottom: 1px solid var(--line); padding: 8px 16px 20px;
+    box-shadow: 0 12px 24px rgba(20, 41, 90, .08); display: none;
+  }
+  .site-nav.open { display: flex; }
+  .site-nav a:not(.btn) { padding: 14px 4px; border-bottom: 1px solid var(--line); font-size: 1rem; }
+  .site-nav .btn { margin-top: 16px; }
+}
+@media (max-width: 600px) {
+  .container { padding: 0 16px; }
+  .brand-text strong { font-size: 1.1rem; }
+  .brand-text small { font-size: .65rem; letter-spacing: .14em; }
+  .hero { padding: 56px 0 64px; }
+  .section { padding: 64px 0; }
+  .cards, .sister-services, .tech-list, .field-row, .footer-brands { grid-template-columns: 1fr; }
+  .value { padding: 18px 10px; gap: 10px; font-size: .78rem; }
+  .value svg { width: 28px; height: 28px; }
+  .sister { padding: 28px 20px; }
+  .contact-form { padding: 22px; }
+  .hero-actions .btn { flex: 1 1 100%; }
+  .footer-motto { font-size: .8rem; letter-spacing: .05em; }
+}
+
+/* ========== Survey CTA card ========== */
+.card-cta { background: var(--navy); border-color: var(--navy); text-decoration: none; display: flex; flex-direction: column; justify-content: center; }
+.card-cta h3 { color: #fff; }
+.card-cta p { color: #c9d3e6; }
+.card-cta-link { margin-top: 16px; color: var(--saffron); font-weight: 700; }
+
+/* ========== Plans & printing panels ========== */
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.panel { border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; background: #fff; box-shadow: var(--shadow); }
+.panel-title { display: flex; align-items: center; gap: 10px; font: 600 1.35rem/1.2 var(--font-head); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 20px; }
+.dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+.dot-saffron { background: var(--saffron); }
+.dot-green { background: var(--green); }
+.ticks { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.ticks li { position: relative; padding: 11px 0 11px 30px; border-bottom: 1px dashed var(--line); font-weight: 500; }
+.ticks li:last-child { border-bottom: 0; }
+.ticks li::before {
+  content: ""; position: absolute; left: 0; top: 14px; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--green-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f7a3a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-9'/%3E%3C/svg%3E") center/12px no-repeat;
+}
+@media (max-width: 760px) {
+  .panels { grid-template-columns: 1fr; }
+  .panel { padding: 24px 20px; }
+}
+
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="tricolor" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Nag & Associates Survey Consultancy home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="11"/><circle cx="20" cy="20" r="3"/><path d="M20 3v8M20 29v8M3 20h8M29 20h8"/></svg>
+        </span>
+        <span class="brand-text">
+          <strong>Nag &amp; Associates</strong>
+          <small>Survey Consultancy</small>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Surveys</a>
+        <a href="#plans">Plans &amp; Printing</a>
+        <a href="#aadrita">Aadrita Buildcon</a>
+        <a href="#contact" class="btn btn-small">Contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="tagline-pill">Precision Today, Progress Tomorrow</p>
+          <h1>Accurate land &amp; infrastructure surveys you can build on.</h1>
+          <p class="lead">Your digital survey &amp; printing solution in Raniganj. Engineering, land &amp; mines, topographic, contour and mouza plot surveys with Total Station, GPS and drones, plus building and conversion plans and large-format printing up to A0+.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn">Request a survey</a>
+            <a href="tel:+919564295656" class="btn btn-ghost">Call +91 95642 95656</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 320" class="contour-art">
+            <g fill="none" stroke-width="1.5">
+              <path d="M40 260 C 90 180, 170 210, 210 150 S 330 90, 370 120" />
+              <path d="M60 275 C 110 205, 180 230, 225 175 S 330 120, 375 150" />
+              <path d="M80 290 C 130 230, 195 250, 240 200 S 335 150, 380 180" />
+              <path d="M30 240 C 70 160, 160 185, 195 125 S 320 60, 365 90" />
+              <path d="M25 215 C 60 140, 150 160, 182 100 S 305 35, 355 60" />
+            </g>
+            <g class="grid" stroke-width="1">
+              <path d="M0 80H400M0 160H400M0 240H400M100 0V320M200 0V320M300 0V320"/>
+            </g>
+            <g class="pins">
+              <circle cx="210" cy="150" r="7"/><circle cx="120" cy="214" r="5"/><circle cx="318" cy="102" r="5"/>
+            </g>
+            <g class="crosshair" fill="none" stroke-width="2.5">
+              <circle cx="210" cy="150" r="26"/>
+              <path d="M210 112v20M210 168v20M172 150h20M228 150h20"/>
+            </g>
+          </svg>
+          <div class="hero-badge">
+            <strong>Total Station · GPS / DGPS · Drone</strong>
+            <span>Survey-grade accuracy on every project</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values" aria-label="Why choose us">
+      <div class="container values-grid">
+        <div class="value">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg>
+          <span>Accurate Surveys</span>
+        </div>
+        <div class="value">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="2" width="8" height="8" rx="1.5"/><circle cx="12" cy="6" r="1.8"/><path d="M12 10v3M12 13l-6 9M12 13l6 9M12 13v9"/></svg>
+          <span>Advanced Technology</span>
+        </div>
+        <div class="value">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+          <span>Reliable Results</span>
+        </div>
+        <div class="value">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3"/><circle cx="5" cy="9" r="2.2"/><circle cx="19" cy="9" r="2.2"/><path d="M6.5 20v-2a5.5 5.5 0 0 1 11 0v2M1.5 19v-1.5A3.5 3.5 0 0 1 5 14M22.5 19v-1.5A3.5 3.5 0 0 0 19 14"/></svg>
+          <span>Committed to Excellence</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">About us</p>
+          <h2>Precise measurement is where every good project begins.</h2>
+        </div>
+        <div class="prose">
+          <p>Nag &amp; Associates Survey Consultancy is a digital survey and printing firm based at Tantia Complex, N.S.B. Road, Raniganj. We specialise in all types of engineering survey, land and mines survey, and topographic, contour, quantity and mouza plot surveys for landowners, builders, mining and industrial projects, and government works.</p>
+          <p>We combine field experience with modern equipment, including Total Station, GPS/DGPS and drones, and prepare the plans and documents you need: building and site plans, registration and assessment plans, and conversion (Bastu) plans for ADDA NOC and BL &amp; LRO. Our in-house printing desk handles engineering drawings, A0+ prints, scanning, jumbo photocopies, ammonia prints and mouza sheets.</p>
+          <p>Together with our sister concern, <a href="#aadrita">Aadrita Buildcon LLP</a>, we support your project from the first survey to the finished building.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SURVEY SERVICES -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Our services</p>
+          <h2>Survey &amp; mapping services</h2>
+          <p>Specialists in all types of engineering survey, from a single mouza plot to mines, roads and railway lines, using Total Station &amp; GPS.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M9 21v-5h6v5"/></svg></div>
+            <h3>Engineering Survey</h3>
+            <p>All types of engineering surveys for design, setting out and construction of civil works.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 20l6-10 4 6 3-4 7 8z"/><path d="M14 4l3 3M17 4l-3 3"/></svg></div>
+            <h3>Land &amp; Mines Survey</h3>
+            <p>Land measurement and mine surveys, including pit, dump and lease-area mapping.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 19l6-9 4 5 3-4 7 8z"/><circle cx="17" cy="6" r="2"/></svg></div>
+            <h3>Topographic Survey</h3>
+            <p>Detailed mapping of ground levels, natural features and existing structures for planning and design.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 17c4-6 8 2 12-4s5-3 6-4M3 12c4-6 8 2 12-4s5-3 6-4M3 21c4-5 8 1 12-3s5-2 6-3"/></svg></div>
+            <h3>Contour Survey &amp; Mapping</h3>
+            <p>Accurate contour plans for earthwork, drainage design, site grading and levelling.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 21V10l6 4V10l6 4V6l8 5v10z"/><path d="M6 17h2M11 17h2M16 17h2"/></svg></div>
+            <h3>Mining &amp; Industrial Projects</h3>
+            <p>Plant layout, alignment and as-built surveys for mining and industrial projects.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></svg></div>
+            <h3>Quantity Survey</h3>
+            <p>Volume and quantity calculations for earthwork, stockpiles, excavation and billing.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg></div>
+            <h3>Mouza Plot Survey &amp; Layout</h3>
+            <p>Plot surveys and layouts with Total Station &amp; GPS, matched against mouza maps and records.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" stroke-dasharray="3 2"/><circle cx="4" cy="4" r="1.6"/><circle cx="20" cy="4" r="1.6"/><circle cx="20" cy="20" r="1.6"/><circle cx="4" cy="20" r="1.6"/></svg></div>
+            <h3>Boundary Survey &amp; Demarcation</h3>
+            <p>Precise identification and marking of property boundaries to prevent and resolve disputes.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 2L5 22M16 2l3 20M6.5 6h11M6 11h12M5.5 16h13"/></svg></div>
+            <h3>Railway Track Survey</h3>
+            <p>Track alignment, level and curve surveys for new lines, sidings and maintenance works.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 2L4 22M15 2l5 20M12 4v3M12 10v4M12 17v4"/></svg></div>
+            <h3>Roads &amp; Infrastructure Survey</h3>
+            <p>Route alignment, cross-sections and longitudinal sections for roads, bridges and utilities.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="6" height="5" rx="1"/><path d="M9 11H5M15 11h4M3 8h4M17 8h6M5 8v3M19 8v3M10 14l-1 3M14 14l1 3"/></svg></div>
+            <h3>Drone Survey &amp; 3D Mapping</h3>
+            <p>Aerial imaging, orthomosaics and 3D terrain models for large or hard-to-reach areas.</p>
+          </article>
+          <a class="card card-cta" href="#contact">
+            <h3>Need a different survey?</h3>
+            <p>Tell us about your site and requirement. Call +91-95642-95656 or send an enquiry.</p>
+            <span class="card-cta-link">Contact us &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANS & PRINTING -->
+    <section class="section" id="plans">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Plans, approvals &amp; printing</p>
+          <h2>Drawings and documents, done in-house</h2>
+          <p>We prepare the plans you need for registration, approval and conversion, and print them to any size.</p>
+        </div>
+        <div class="panels">
+          <div class="panel">
+            <h3 class="panel-title"><span class="dot dot-saffron" aria-hidden="true"></span>Plans &amp; approvals</h3>
+            <ul class="ticks">
+              <li>Building Plan (incl. AMC approval support)</li>
+              <li>Site Plan</li>
+              <li>3D View</li>
+              <li>Master Plan Plotting</li>
+              <li>Registration Plan of Land &amp; Building</li>
+              <li>Assessment Plan</li>
+              <li>Conversion (Bastu) Plan for N.O.C. of ADDA</li>
+              <li>Conversion Plan for B.L. &amp; L.R.O.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3 class="panel-title"><span class="dot dot-green" aria-hidden="true"></span>Printing &amp; drawing</h3>
+            <ul class="ticks">
+              <li>All types of engineering drawing (Civil / Mechanical)</li>
+              <li>Printing up to A0+ size</li>
+              <li>On paper, tracing paper, cloth &amp; film</li>
+              <li>Scanning</li>
+              <li>Photocopy (Jumbo)</li>
+              <li>Ammonia Print</li>
+              <li>Mouza Sheets available</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section class="section tech" id="technology">
+      <div class="container tech-inner">
+        <div>
+          <p class="eyebrow">Equipment &amp; methods</p>
+          <h2>Advanced technology for reliable results</h2>
+          <p class="tech-lead">Modern survey instruments mean faster fieldwork, higher accuracy and clear deliverables in standard CAD and GIS formats.</p>
+        </div>
+        <ul class="tech-list">
+          <li>Total Station</li>
+          <li>GPS / DGPS</li>
+          <li>Drone</li>
+          <li>3D Mapping</li>
+          <li>Contouring</li>
+          <li>Aerial Photogrammetry</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SISTER CONCERN -->
+    <section class="section" id="aadrita">
+      <div class="container">
+        <div class="sister">
+          <div class="sister-head">
+            <div class="aadrita-logo">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path class="b1" d="M6 44V22l9-6v28z"/><path class="b2" d="M17 44V12l10-8v40z"/><path class="b3" d="M29 44V18l11 6v20z"/></svg>
+              <div>
+                <strong>Aadrita</strong>
+                <span>Buildcon LLP</span>
+              </div>
+            </div>
+            <p class="eyebrow">Our sister concern</p>
+            <h2>From survey to construction, under one roof.</h2>
+            <p>Aadrita Buildcon LLP is our construction partner. It handles turnkey building projects, renovations and civil construction, so the same trusted team can take your project from land survey and plan approval through to a finished building.</p>
+          </div>
+          <div class="sister-services">
+            <article>
+              <h3>Turnkey Building Contracts</h3>
+              <p>Complete design-to-handover construction with a single point of responsibility.</p>
+            </article>
+            <article>
+              <h3>Renovation</h3>
+              <p>Repairs, remodelling and upgrades for homes and commercial spaces.</p>
+            </article>
+            <article>
+              <h3>Duplex Projects</h3>
+              <p>Planning and construction of independent duplex homes built to your needs.</p>
+            </article>
+            <article>
+              <h3>Civil Construction</h3>
+              <p>Quality civil works for residential, commercial and infrastructure projects.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <h2>Two strong names. One commitment.</h2>
+          <p>Building a better India.</p>
+        </div>
+        <a href="#contact" class="btn btn-light">Start your project</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Talk to us about your survey or project.</h2>
+          <p>Call, email, or send an enquiry and we'll get back to you soon.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+              <span><span class="label">Office</span>Room No. 1-C, Ground Floor, Tantia Complex<br>(Beside LICI Office), N.S.B. Road<br>Raniganj – 713347, Paschim Burdwan (W.B.)</span>
+            </li>
+            <li>
+              <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+              <span><span class="label">Phone</span><a href="tel:+919564295656">+91-95642-95656</a><br><a href="tel:+919434382685">+91-94343-82685</a><br><a href="tel:+918927155227">+91-89271-55227</a></span>
+            </li>
+            <li>
+              <span class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></span>
+              <span><span class="label">Email</span><a href="mailto:nag_associates@outlook.com">nag_associates@outlook.com</a></span>
+            </li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="email">Email (optional)</label>
+              <input id="email" name="email" type="email" autocomplete="email">
+            </div>
+          </div>
+          <div class="field">
+            <label for="service">Service required</label>
+            <select id="service" name="service">
+              <optgroup label="Surveys">
+                <option>Engineering Survey</option>
+                <option>Land &amp; Mines Survey</option>
+                <option>Topographic Survey</option>
+                <option>Contour Survey &amp; Mapping</option>
+                <option>Mining &amp; Industrial Project Survey</option>
+                <option>Quantity Survey</option>
+                <option>Mouza Plot Survey &amp; Layout</option>
+                <option>Boundary Survey &amp; Demarcation</option>
+                <option>Railway Track Survey</option>
+                <option>Roads &amp; Infrastructure Survey</option>
+                <option>Drone Survey &amp; 3D Mapping</option>
+              </optgroup>
+              <optgroup label="Plans &amp; approvals">
+                <option>Building Plan / AMC Approval</option>
+                <option>Site Plan / 3D View</option>
+                <option>Master Plan Plotting</option>
+                <option>Registration Plan of Land &amp; Building</option>
+                <option>Assessment Plan</option>
+                <option>Conversion (Bastu) Plan for ADDA NOC</option>
+                <option>Conversion Plan for B.L. &amp; L.R.O.</option>
+              </optgroup>
+              <optgroup label="Printing">
+                <option>Printing / Scanning / Photocopy / Mouza Sheet</option>
+              </optgroup>
+              <optgroup label="Aadrita Buildcon LLP">
+                <option>Turnkey Building Contract</option>
+                <option>Renovation</option>
+                <option>Duplex Project</option>
+                <option>Civil Construction</option>
+              </optgroup>
+              <option>Other / General enquiry</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="location">Site location</label>
+            <input id="location" name="location" type="text" placeholder="Village / town, district">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-block">Send enquiry</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-brands">
+      <div class="f-brand">
+        <strong>Nag &amp; Associates</strong>
+        <span class="f-sub">Survey Consultancy</span>
+        <p>Digital Survey &amp; Printing Solution<br>Topographical | Industrial | Infrastructure | Railway<br>Survey &amp; Mapping Solutions</p>
+      </div>
+      <div class="f-brand">
+        <strong>Aadrita Buildcon LLP</strong>
+        <span class="f-sub green">Sister concern</span>
+        <p>Turnkey Building Contracts | Renovation<br>Duplex Projects | Civil Construction</p>
+      </div>
+      <div class="f-brand">
+        <strong>Get in touch</strong>
+        <p>Room No. 1-C, Ground Floor, Tantia Complex (Beside LICI Office), N.S.B. Road, Raniganj – 713347, Paschim Burdwan (W.B.)<br>
+          <a href="tel:+919564295656">+91-95642-95656</a> · <a href="tel:+919434382685">+91-94343-82685</a> · <a href="tel:+918927155227">+91-89271-55227</a><br>
+          <a href="mailto:nag_associates@outlook.com">nag_associates@outlook.com</a></p>
+      </div>
+    </div>
+    <div class="footer-motto">
+      <span>Your Vision.</span><span>Our Precision.</span><span>Better Tomorrow.</span>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> Nag &amp; Associates Survey Consultancy. All rights reserved.</p>
+      <p>Precision Today, Progress Tomorrow.</p>
+    </div>
+  </footer>
+
+  <script>
+(function () {
+  "use strict";
+
+  // Footer year
+  var year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+
+  // Header shadow on scroll
+  var header = document.querySelector(".site-header");
+  function onScroll() {
+    header.classList.toggle("scrolled", window.scrollY > 8);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  // Mobile navigation
+  var toggle = document.querySelector(".nav-toggle");
+  var nav = document.getElementById("site-nav");
+  function setNav(open) {
+    nav.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  }
+  toggle.addEventListener("click", function () {
+    setNav(!nav.classList.contains("open"));
+  });
+  nav.addEventListener("click", function (e) {
+    if (e.target.tagName === "A") setNav(false);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") setNav(false);
+  });
+
+  // Reveal-on-scroll animation
+  var revealTargets = document.querySelectorAll(".card, .section-head, .split > *, .sister, .tech-inner > *");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealTargets.forEach(function (el) {
+      el.classList.add("reveal");
+      io.observe(el);
+    });
+  }
+
+  // Contact form: validates input, then opens the visitor's email app.
+  // To receive submissions directly, point the form at a service such as
+  // Formspree or Netlify Forms (see README).
+  var form = document.getElementById("contact-form");
+  var status = form.querySelector(".form-status");
+  var RECIPIENT = "nag_associates@outlook.com";
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var ok = true;
+    ["name", "phone", "email", "message"].forEach(function (id) {
+      var input = form.elements[id];
+      var empty = input.value.trim() === "";
+      var valid = input.required ? !empty && input.checkValidity() : (empty || input.checkValidity());
+      input.closest(".field").classList.toggle("invalid", !valid);
+      if (!valid) ok = false;
+    });
+
+    if (!ok) {
+      status.className = "form-status err";
+      status.textContent = "Please fill in your name, phone number and a message (and a valid email if given).";
+      return;
+    }
+
+    var d = form.elements;
+    var subject = "Website enquiry - " + d.service.value;
+    var body =
+      "Name: " + d.name.value + "\n" +
+      "Phone: " + d.phone.value + "\n" +
+      "Email: " + d.email.value + "\n" +
+      "Site location: " + d.location.value + "\n\n" +
+      d.message.value;
+    window.location.href =
+      "mailto:" + RECIPIENT +
+      "?subject=" + encodeURIComponent(subject) +
+      "&body=" + encodeURIComponent(body);
+
+    status.className = "form-status ok";
+    status.textContent = "Thank you! Your email app should open to send the message.";
+    form.reset();
+  });
+})();
+
+</script>
+</body>
+</html>

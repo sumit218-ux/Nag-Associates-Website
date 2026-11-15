@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nag &amp; Associates Survey Consultancy | Accurate Surveys in Raniganj</title>
+  <meta name="description" content="Land, mines, topographic, contour and mouza plot surveys with Total Station, GPS and drones. Building and conversion plans for ADDA NOC. Raniganj, Paschim Burdwan.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%2314295a%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23f07a1c%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2216%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%224%22/%3E%3Cpath%20d%3D%22M32%208v12M32%2044v12M8%2032h12M44%2032h12%22/%3E%3C/g%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --navy: #0e1f45;
+  --navy-2: #172f63;
+  --saffron: #f47b20;
+  --saffron-2: #ff9a4a;
+  --green: #1f8a47;
+  --ink: #141c2b;
+  --muted: #5d6879;
+  --line: #e4e8ef;
+  --tint: #f5f7fb;
+  --white: #fff;
+  --r: 18px;
+  --shadow: 0 20px 50px -20px rgba(14, 31, 69, .25);
+  --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { margin: 0; font-family: var(--font); color: var(--ink); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+svg { display: block; }
+a { color: inherit; }
+h1, h2, h3 { margin: 0 0 .5em; line-height: 1.15; letter-spacing: -.02em; }
+h2 { font-size: clamp(1.8rem, 3.6vw, 2.7rem); font-weight: 800; }
+h3 { font-size: 1.15rem; font-weight: 700; }
+p { margin: 0 0 1em; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip-link { position: absolute; left: -999px; top: 8px; z-index: 200; background: var(--saffron); color: #fff; padding: 8px 14px; border-radius: 8px; }
+.skip-link:focus { left: 8px; }
+:focus-visible { outline: 3px solid var(--saffron); outline-offset: 3px; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--saffron); color: #fff; border: 2px solid var(--saffron);
+  padding: 12px 22px; border-radius: 12px; font: 700 .95rem/1 var(--font); text-decoration: none;
+  cursor: pointer; transition: transform .2s, box-shadow .2s, background .2s, color .2s;
+  box-shadow: 0 10px 24px -10px rgba(244, 123, 32, .7);
+}
+.btn:hover { transform: translateY(-2px); background: #e66d12; border-color: #e66d12; }
+.btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; }
+.btn-lg { padding: 16px 28px; font-size: 1rem; }
+.btn-sm { padding: 10px 16px; font-size: .9rem; }
+.btn-block { width: 100%; }
+.btn-outline { background: transparent; border-color: rgba(255, 255, 255, .35); box-shadow: none; }
+.btn-outline:hover { background: rgba(255, 255, 255, .1); border-color: #fff; }
+.btn-ghost { background: transparent; color: var(--navy); border-color: var(--line); box-shadow: none; }
+.btn-ghost:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+.btn-outline-dark { background: #fff; color: var(--navy); border-color: var(--navy); box-shadow: none; }
+
+/* Nav */
+.nav { position: fixed; inset: 0 0 auto; z-index: 100; transition: background .3s, box-shadow .3s; }
+.nav.solid { background: rgba(14, 31, 69, .92); backdrop-filter: blur(12px); box-shadow: 0 8px 30px rgba(0, 0, 0, .15); }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #fff; }
+.logo-mark { width: 42px; height: 42px; border-radius: 12px; background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .2); display: grid; place-items: center; }
+.logo-mark svg { width: 28px; height: 28px; fill: none; stroke: var(--saffron); stroke-width: 2.6; stroke-linecap: round; }
+.logo-text { font-weight: 800; font-size: 1.1rem; line-height: 1.1; display: flex; flex-direction: column; }
+.logo-text small { font-size: .68rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--saffron-2); }
+.menu { display: flex; align-items: center; gap: 28px; }
+.menu a:not(.btn) { color: rgba(255, 255, 255, .85); text-decoration: none; font-weight: 600; font-size: .95rem; }
+.menu a:not(.btn):hover { color: #fff; }
+.nav-phone { padding-left: 28px; border-left: 1px solid rgba(255, 255, 255, .2); }
+.menu-btn { display: none; width: 44px; height: 44px; border: 0; border-radius: 10px; background: rgba(255, 255, 255, .1); cursor: pointer; padding: 0; }
+.menu-btn span { display: block; width: 20px; height: 2px; background: #fff; margin: 5px auto; transition: transform .25s; }
+.menu-btn[aria-expanded="true"] span:first-child { transform: translateY(3.5px) rotate(45deg); }
+.menu-btn[aria-expanded="true"] span:last-child { transform: translateY(-3.5px) rotate(-45deg); }
+
+/* Hero */
+.hero {
+  position: relative; overflow: hidden; color: #fff; padding: 150px 0 110px;
+  background: radial-gradient(800px 500px at 85% 20%, rgba(244, 123, 32, .28), transparent 60%),
+              radial-gradient(700px 500px at 0% 100%, rgba(31, 138, 71, .28), transparent 60%),
+              linear-gradient(160deg, var(--navy) 0%, #0a1733 100%);
+}
+.hero-bg { position: absolute; inset: 0; color: rgba(255, 255, 255, .07); }
+.hero-bg svg { width: 100%; height: 100%; }
+.hero-inner { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
+.chip { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border-radius: 999px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .15); font-size: .82rem; font-weight: 600; letter-spacing: .04em; }
+.chip-dot { width: 8px; height: 8px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 0 4px rgba(74, 222, 128, .2); }
+.hero h1 { font-size: clamp(2.4rem, 5.4vw, 4.1rem); font-weight: 800; margin: 22px 0 20px; }
+.hl { background: linear-gradient(90deg, var(--saffron-2), #ffd19e); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero-lead { font-size: 1.12rem; color: rgba(255, 255, 255, .78); max-width: 34em; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
+.hero-points { list-style: none; padding: 0; margin: 30px 0 0; display: flex; flex-wrap: wrap; gap: 10px 24px; color: rgba(255, 255, 255, .8); font-size: .92rem; font-weight: 600; }
+.hero-points li { display: flex; align-items: center; gap: 8px; }
+.hero-points li::before { content: "✓"; display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(74, 222, 128, .18); color: #4ade80; font-size: .7rem; }
+
+.hero-card { background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .14); border-radius: 22px; padding: 18px; backdrop-filter: blur(6px); box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .6); transform: rotate(1.5deg); }
+.hc-top { display: flex; align-items: center; gap: 6px; margin-bottom: 14px; }
+.hc-dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255, 255, 255, .25); }
+.hc-dot:first-child { background: var(--saffron); }
+.hc-title { margin-left: 8px; font-size: .8rem; color: rgba(255, 255, 255, .7); font-weight: 600; }
+.hc-map { width: 100%; height: auto; background: rgba(5, 12, 30, .55); border-radius: 14px; }
+.hc-grid { stroke: rgba(255, 255, 255, .07); fill: none; }
+.hc-c1 { stroke: rgba(244, 123, 32, .7); fill: none; stroke-width: 1.5; }
+.hc-c2 { stroke: rgba(255, 255, 255, .4); fill: none; stroke-width: 1.5; }
+.hc-plot { fill: rgba(74, 222, 128, .15); stroke: #4ade80; stroke-width: 2; stroke-dasharray: 6 4; }
+.hc-pts circle { fill: #fff; stroke: var(--navy); stroke-width: 2; }
+.hc-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
+.hc-stats div { background: rgba(255, 255, 255, .06); border-radius: 10px; padding: 10px 12px; }
+.hc-stats span { display: block; font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; color: rgba(255, 255, 255, .55); }
+.hc-stats strong { font-size: .92rem; }
+
+/* Strip */
+.strip { border-bottom: 1px solid var(--line); background: #fff; }
+.strip-inner { display: flex; align-items: center; gap: 28px; padding-top: 22px; padding-bottom: 22px; }
+.strip-inner > span { font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.strip ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 32px; font-weight: 700; color: var(--navy); }
+
+/* Sections */
+.section { padding: 100px 0; }
+.section-tint { background: var(--tint); }
+.sec-head { max-width: 680px; margin: 0 auto 52px; text-align: center; }
+.sec-head p { color: var(--muted); font-size: 1.05rem; }
+.kicker { display: inline-block; font-size: .78rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--saffron); margin-bottom: 12px; }
+.kicker-light { color: var(--saffron-2); }
+
+/* Features */
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.feature { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 28px; transition: transform .25s, box-shadow .25s; }
+.feature:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.feature p { color: var(--muted); margin: 0; font-size: .96rem; }
+.feature-lg { background: linear-gradient(160deg, var(--navy), var(--navy-2)); color: #fff; border: 0; display: flex; flex-direction: column; }
+.feature-lg p { color: rgba(255, 255, 255, .75); }
+.f-icon { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; background: #fff2e7; margin-bottom: 20px; }
+.feature-lg .f-icon { background: rgba(255, 255, 255, .1); }
+.f-icon svg { width: 26px; height: 26px; fill: none; stroke: var(--saffron); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.tags { list-style: none; padding: 0; margin: auto 0 0; padding-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li { padding: 6px 12px; border-radius: 999px; background: rgba(255, 255, 255, .1); font-size: .8rem; font-weight: 600; }
+
+.process { list-style: none; padding: 0; margin: 56px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.process li { display: flex; gap: 16px; align-items: flex-start; padding: 22px; border-radius: var(--r); background: var(--tint); }
+.process li > span { flex-shrink: 0; width: 40px; height: 40px; border-radius: 12px; background: var(--saffron); color: #fff; font-weight: 800; display: grid; place-items: center; }
+.process strong { display: block; margin-bottom: 2px; }
+.process p { margin: 0; color: var(--muted); font-size: .93rem; }
+
+/* Testimonials */
+.testimonials { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.quote { margin: 0; background: #fff; border-radius: var(--r); padding: 30px; border: 1px solid var(--line); display: flex; flex-direction: column; }
+.stars { color: #f5a623; letter-spacing: 2px; margin-bottom: 14px; }
+.quote blockquote { margin: 0 0 24px; font-size: 1.02rem; line-height: 1.65; flex: 1; }
+.quote figcaption { display: flex; align-items: center; gap: 12px; }
+.avatar { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; color: #fff; background: linear-gradient(135deg, var(--saffron), var(--green)); }
+.quote figcaption strong { display: block; }
+.quote figcaption small { color: var(--muted); }
+
+/* Pricing */
+.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
+.plan { position: relative; border: 1px solid var(--line); border-radius: 22px; padding: 34px 30px; display: flex; flex-direction: column; background: #fff; }
+.plan-desc { color: var(--muted); font-size: .93rem; }
+.price { margin: 8px 0 22px; padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+.price .from { display: block; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+.price .amt { font-size: 2.1rem; font-weight: 800; color: var(--navy); }
+.plan ul { list-style: none; padding: 0; margin: 0 0 28px; display: grid; gap: 12px; flex: 1; }
+.plan li { position: relative; padding-left: 28px; font-size: .95rem; }
+.plan li::before { content: "✓"; position: absolute; left: 0; top: 1px; width: 18px; height: 18px; border-radius: 50%; display: grid; place-items: center; font-size: .65rem; font-weight: 800; color: var(--green); background: #e5f5eb; }
+.plan-featured { background: linear-gradient(170deg, var(--navy), var(--navy-2)); color: #fff; border: 0; box-shadow: var(--shadow); transform: translateY(-12px); }
+.plan-featured .plan-desc, .plan-featured .price .from { color: rgba(255, 255, 255, .65); }
+.plan-featured .price { border-color: rgba(255, 255, 255, .15); }
+.plan-featured .price .amt { color: #fff; }
+.plan-featured li::before { background: rgba(74, 222, 128, .2); color: #4ade80; }
+.badge { position: absolute; top: -13px; left: 30px; background: var(--saffron); color: #fff; font-size: .75rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; }
+
+/* CTA */
+.cta { padding: 0 0 100px; }
+.cta-inner {
+  display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center;
+  background: radial-gradient(600px 300px at 100% 0%, rgba(244, 123, 32, .35), transparent 60%),
+              linear-gradient(140deg, var(--navy), #0a1733);
+  border-radius: 28px; padding: 60px; color: #fff; max-width: 1132px;
+}
+.cta h2 { color: #fff; }
+.cta-copy p { color: rgba(255, 255, 255, .75); font-size: 1.05rem; }
+.cta-contacts { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 8px; }
+.cta-contacts a { color: #fff; font-weight: 700; text-decoration: none; word-break: break-word; }
+.cta-contacts a:hover { color: var(--saffron-2); }
+.cta-form { background: #fff; border-radius: 20px; padding: 26px; display: grid; gap: 12px; }
+.cta-form input, .cta-form select { width: 100%; font: inherit; color: var(--ink); padding: 14px 16px; border-radius: 12px; border: 1px solid var(--line); background: var(--tint); }
+.cta-form input:focus, .cta-form select:focus { outline: none; border-color: var(--saffron); box-shadow: 0 0 0 3px rgba(244, 123, 32, .2); background: #fff; }
+.cta-form input.bad { border-color: #d33; }
+.form-msg { margin: 0; font-size: .9rem; color: var(--muted); min-height: 1.4em; }
+.form-msg.ok { color: var(--green); }
+.form-msg.err { color: #c62828; }
+
+/* Footer */
+.footer { background: #0a1733; color: rgba(255, 255, 255, .7); padding: 56px 0 28px; font-size: .93rem; }
+.footer-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding-bottom: 32px; border-bottom: 1px solid rgba(255, 255, 255, .1); }
+.footer strong { color: #fff; display: block; margin-bottom: 8px; }
+.footer-bottom { display: flex; justify-content: space-between; gap: 16px; padding-top: 22px; flex-wrap: wrap; }
+.footer-bottom a { color: var(--saffron-2); text-decoration: none; font-weight: 600; }
+
+.callbar { display: none; }
+
+/* Reveal */
+.rv { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+.rv.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .rv { opacity: 1; transform: none; }
+  * { transition: none !important; }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .hero-inner, .cta-inner { grid-template-columns: 1fr; }
+  .hero-card { max-width: 480px; transform: none; }
+  .features { grid-template-columns: repeat(2, 1fr); }
+  .feature-lg { grid-column: auto; }
+  .testimonials, .plans { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; }
+  .plan-featured { transform: none; }
+  .cta-inner { padding: 44px; }
+}
+@media (max-width: 860px) {
+  .menu-btn { display: block; }
+  .menu {
+    position: absolute; top: 76px; left: 12px; right: 12px; flex-direction: column; align-items: stretch; gap: 4px;
+    background: var(--navy); border-radius: 16px; padding: 12px; box-shadow: 0 20px 40px rgba(0, 0, 0, .3); display: none;
+  }
+  .menu.open { display: flex; }
+  .menu a:not(.btn) { padding: 12px; border-radius: 10px; }
+  .menu a:not(.btn):hover { background: rgba(255, 255, 255, .06); }
+  .nav-phone { border: 0; padding-left: 12px; }
+  .menu .btn { margin-top: 6px; }
+  .nav { background: rgba(14, 31, 69, .92); backdrop-filter: blur(12px); }
+  .process { grid-template-columns: 1fr; }
+  .strip-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+@media (max-width: 600px) {
+  .wrap { padding: 0 16px; }
+  .hero { padding: 116px 0 72px; }
+  .hero-cta .btn { flex: 1 1 100%; }
+  .section { padding: 72px 0; }
+  .features { grid-template-columns: 1fr; }
+  .cta { padding-bottom: 72px; }
+  .cta-inner { padding: 32px 20px; border-radius: 22px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+  .footer { padding-bottom: 96px; }
+  .hc-stats strong { font-size: .8rem; }
+  .callbar {
+    display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .96);
+    backdrop-filter: blur(10px); box-shadow: 0 -8px 24px rgba(14, 31, 69, .12);
+  }
+  .callbar .btn { padding: 14px; }
+}
+
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo" aria-label="Nag & Associates Survey Consultancy">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="11"/><circle cx="20" cy="20" r="3"/><path d="M20 3v8M20 29v8M3 20h8M29 20h8"/></svg>
+        </span>
+        <span class="logo-text">Nag &amp; Associates<small>Survey Consultancy</small></span>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+      <nav class="menu" id="menu" aria-label="Primary">
+        <a href="#features">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#pricing">Pricing</a>
+        <a href="tel:+919564295656" class="nav-phone">+91 95642 95656</a>
+        <a href="#cta" class="btn btn-sm">Get a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+          <g fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M-50 520 C 200 380, 380 470, 560 360 S 900 180, 1250 260"/>
+            <path d="M-50 570 C 210 430, 400 520, 590 410 S 920 240, 1250 320"/>
+            <path d="M-50 620 C 220 480, 420 570, 620 460 S 940 300, 1250 380"/>
+            <path d="M-50 470 C 190 330, 360 420, 530 310 S 880 120, 1250 200"/>
+            <path d="M-50 420 C 180 280, 340 370, 500 260 S 860 60, 1250 140"/>
+            <path d="M-50 670 C 230 530, 440 620, 650 510 S 960 360, 1250 440"/>
+          </g>
+        </svg>
+      </div>
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <span class="chip"><span class="chip-dot"></span>Precision Today, Progress Tomorrow</span>
+          <h1>Survey-grade accuracy for every <span class="hl">plot, mine &amp; project.</span></h1>
+          <p class="hero-lead">Engineering, land &amp; mines, topographic, contour and mouza plot surveys with Total Station, GPS and drones, plus building plans, ADDA conversion plans and A0+ printing. All from one office in Raniganj.</p>
+          <div class="hero-cta">
+            <a href="#cta" class="btn btn-lg">Get a free quote</a>
+            <a href="tel:+919564295656" class="btn btn-lg btn-outline">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              Call now
+            </a>
+          </div>
+          <ul class="hero-points">
+            <li>Total Station &amp; GPS</li>
+            <li>Drone mapping</li>
+            <li>ADDA NOC plans</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <div class="hc-top">
+            <span class="hc-dot"></span><span class="hc-dot"></span><span class="hc-dot"></span>
+            <span class="hc-title">Site survey · Plot layout</span>
+          </div>
+          <svg viewBox="0 0 320 220" class="hc-map">
+            <path class="hc-grid" d="M0 55H320M0 110H320M0 165H320M80 0V220M160 0V220M240 0V220"/>
+            <path class="hc-c1" d="M10 190 C 70 120, 120 160, 170 100 S 260 50, 310 70"/>
+            <path class="hc-c2" d="M10 160 C 60 100, 110 130, 150 80 S 250 25, 310 40"/>
+            <path class="hc-c1" d="M20 215 C 80 150, 140 185, 190 130 S 270 90, 315 100"/>
+            <polygon class="hc-plot" points="95,70 205,58 225,150 110,168"/>
+            <g class="hc-pts"><circle cx="95" cy="70" r="5"/><circle cx="205" cy="58" r="5"/><circle cx="225" cy="150" r="5"/><circle cx="110" cy="168" r="5"/></g>
+          </svg>
+          <div class="hc-stats">
+            <div><span>Area</span><strong>— dec</strong></div>
+            <div><span>Method</span><strong>TS + GPS</strong></div>
+            <div><span>Output</span><strong>CAD / PDF</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="strip" aria-label="Who we work for">
+      <div class="wrap strip-inner">
+        <span>Trusted for</span>
+        <ul>
+          <li>Landowners</li><li>Builders &amp; developers</li><li>Mining projects</li><li>Industries</li><li>Railway &amp; road works</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="kicker">What we do</span>
+          <h2>Everything your land or project needs, under one roof</h2>
+          <p>From the first measurement to the final printed plan, our team handles it end to end.</p>
+        </header>
+
+        <div class="features">
+          <article class="feature feature-lg">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M2 19l6-9 4 5 3-4 7 8z"/><circle cx="17" cy="6" r="2"/></svg></div>
+            <h3>Engineering &amp; Topographic Surveys</h3>
+            <p>Topographic, contour, engineering, road, railway and infrastructure surveys with survey-grade Total Station and GPS equipment.</p>
+            <ul class="tags"><li>Topographic</li><li>Contour</li><li>Railway</li><li>Roads</li></ul>
+          </article>
+          <article class="feature">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M2 20l6-10 4 6 3-4 7 8z"/><path d="M14 4l3 3M17 4l-3 3"/></svg></div>
+            <h3>Land, Mines &amp; Quantity</h3>
+            <p>Land and mines surveys, mining &amp; industrial project surveys and accurate quantity calculations.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg></div>
+            <h3>Mouza Plot &amp; Boundary</h3>
+            <p>Mouza plot surveys, layouts and boundary demarcation, matched against mouza maps.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="6" height="5" rx="1"/><path d="M9 11H5M15 11h4M3 8h4M17 8h6M5 8v3M19 8v3M10 14l-1 3M14 14l1 3"/></svg></div>
+            <h3>Drone &amp; 3D Mapping</h3>
+            <p>Aerial photogrammetry, orthomosaics and 3D terrain models for large or hard-to-reach sites.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h8M9 17h6"/></svg></div>
+            <h3>Plans &amp; Approvals</h3>
+            <p>Building, site, registration and assessment plans, plus conversion (Bastu) plans for ADDA NOC and BL &amp; LRO.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><rect x="2" y="9" width="20" height="9" rx="2"/><path d="M6 14h12v8H6z"/></svg></div>
+            <h3>Printing up to A0+</h3>
+            <p>Engineering drawings, printing on paper, tracing, cloth &amp; film, scanning, jumbo photocopy, ammonia prints and mouza sheets.</p>
+          </article>
+        </div>
+
+        <!-- Process -->
+        <ol class="process" aria-label="How it works">
+          <li><span>1</span><div><strong>Call or enquire</strong><p>Share your site location and requirement.</p></div></li>
+          <li><span>2</span><div><strong>Site survey</strong><p>Our team surveys with Total Station, GPS or drone.</p></div></li>
+          <li><span>3</span><div><strong>Plans delivered</strong><p>Get accurate drawings, digital files and prints.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <!-- TODO: Replace the three sample testimonials below with genuine client feedback (with the clients' permission) before publishing. -->
+    <section class="section section-tint" id="testimonials">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="kicker">Testimonials</span>
+          <h2>What our clients say</h2>
+        </header>
+        <div class="testimonials">
+          <figure class="quote">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <blockquote>“Add a short quote from a landowner about the boundary or mouza plot survey you did for them.”</blockquote>
+            <figcaption><span class="avatar">A</span><span><strong>Client name</strong><small>Landowner, location</small></span></figcaption>
+          </figure>
+          <figure class="quote">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <blockquote>“Add a short quote from a builder or developer about plans, approvals or the ADDA conversion process.”</blockquote>
+            <figcaption><span class="avatar">B</span><span><strong>Client name</strong><small>Builder, location</small></span></figcaption>
+          </figure>
+          <figure class="quote">
+            <div class="stars" aria-label="5 out of 5">★★★★★</div>
+            <blockquote>“Add a short quote from a mining or industrial client about survey accuracy and turnaround time.”</blockquote>
+            <figcaption><span class="avatar">C</span><span><strong>Client name</strong><small>Company, designation</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <!-- TODO: Replace "₹ —" with your actual starting prices, or keep "On request". -->
+    <section class="section" id="pricing">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="kicker">Pricing</span>
+          <h2>Simple packages, clear quotes</h2>
+          <p>Final pricing depends on area, terrain and location. Call us for an exact quote.</p>
+        </header>
+        <div class="plans">
+          <article class="plan">
+            <h3>Plot Survey</h3>
+            <p class="plan-desc">For landowners and home builders</p>
+            <p class="price"><span class="from">Starting at</span><span class="amt">₹ —</span></p>
+            <ul>
+              <li>Mouza plot survey &amp; layout</li>
+              <li>Boundary demarcation</li>
+              <li>Site plan drawing</li>
+              <li>Printed + PDF copy</li>
+            </ul>
+            <a href="#cta" class="btn btn-ghost btn-block" data-plan="Plot Survey">Get a quote</a>
+          </article>
+          <article class="plan plan-featured">
+            <span class="badge">Most requested</span>
+            <h3>Plans &amp; Approvals</h3>
+            <p class="plan-desc">For building and land conversion</p>
+            <p class="price"><span class="from">Starting at</span><span class="amt">₹ —</span></p>
+            <ul>
+              <li>Survey of the plot</li>
+              <li>Building plan / 3D view</li>
+              <li>Conversion (Bastu) plan for ADDA NOC</li>
+              <li>Registration &amp; assessment plans</li>
+              <li>Guidance through submission</li>
+            </ul>
+            <a href="#cta" class="btn btn-block" data-plan="Plans & Approvals">Get a quote</a>
+          </article>
+          <article class="plan">
+            <h3>Project Survey</h3>
+            <p class="plan-desc">For mines, industry and infrastructure</p>
+            <p class="price"><span class="from">Pricing</span><span class="amt">On request</span></p>
+            <ul>
+              <li>Topographic &amp; contour survey</li>
+              <li>Land &amp; mines / quantity survey</li>
+              <li>Drone mapping &amp; 3D models</li>
+              <li>CAD drawings &amp; A0+ prints</li>
+            </ul>
+            <a href="#cta" class="btn btn-ghost btn-block" data-plan="Project Survey">Talk to us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="cta">
+      <div class="wrap cta-inner">
+        <div class="cta-copy">
+          <span class="kicker kicker-light">Get started</span>
+          <h2>Ready to survey your site?</h2>
+          <p>Tell us what you need and we'll call you back with a quote.</p>
+          <ul class="cta-contacts">
+            <li><a href="tel:+919564295656">+91-95642-95656</a></li>
+            <li><a href="tel:+919434382685">+91-94343-82685</a></li>
+            <li><a href="mailto:nag_associates@outlook.com">nag_associates@outlook.com</a></li>
+          </ul>
+        </div>
+        <form class="cta-form" id="quote-form" novalidate>
+          <label class="sr-only" for="q-name">Your name</label>
+          <input id="q-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+          <label class="sr-only" for="q-phone">Phone number</label>
+          <input id="q-phone" name="phone" type="tel" placeholder="Phone number" autocomplete="tel" required>
+          <label class="sr-only" for="q-need">What do you need?</label>
+          <select id="q-need" name="need">
+            <option>Plot Survey</option>
+            <option>Plans &amp; Approvals</option>
+            <option>Project Survey</option>
+            <option>Printing / Mouza Sheets</option>
+            <option>Other</option>
+          </select>
+          <label class="sr-only" for="q-loc">Site location</label>
+          <input id="q-loc" name="location" type="text" placeholder="Site location (optional)">
+          <button type="submit" class="btn btn-lg btn-block">Request a callback</button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Nag &amp; Associates Survey Consultancy</strong>
+        <p>Room No. 1-C, Ground Floor, Tantia Complex (Beside LICI Office), N.S.B. Road, Raniganj – 713347, Paschim Burdwan (W.B.)</p>
+      </div>
+      <div>
+        <strong>Sister concern</strong>
+        <p>Aadrita Buildcon LLP: turnkey building contracts, renovation, duplex projects, civil construction.</p>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>&copy; <span id="yr"></span> Nag &amp; Associates. All rights reserved.</span>
+      <a href="index.html">Full website &rarr;</a>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky call bar -->
+  <div class="callbar">
+    <a href="tel:+919564295656" class="btn btn-outline-dark">Call</a>
+    <a href="#cta" class="btn">Get a quote</a>
+  </div>
+
+  <script>
+(function () {
+  "use strict";
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  // Solid nav after scrolling past the top of the hero
+  var nav = document.querySelector(".nav");
+  function onScroll() { nav.classList.toggle("solid", window.scrollY > 20); }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  // Mobile menu
+  var btn = document.querySelector(".menu-btn");
+  var menu = document.getElementById("menu");
+  function setMenu(open) {
+    menu.classList.toggle("open", open);
+    btn.setAttribute("aria-expanded", String(open));
+    btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  }
+  btn.addEventListener("click", function () { setMenu(!menu.classList.contains("open")); });
+  menu.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+
+  // Pricing buttons preselect the package in the quote form
+  var need = document.getElementById("q-need");
+  document.querySelectorAll("[data-plan]").forEach(function (a) {
+    a.addEventListener("click", function () { need.value = a.getAttribute("data-plan"); });
+  });
+
+  // Reveal on scroll
+  var items = document.querySelectorAll(".feature, .process li, .quote, .plan, .sec-head, .cta-inner");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12 });
+    items.forEach(function (el) { el.classList.add("rv"); io.observe(el); });
+  }
+
+  // Quote form: validate, then open the visitor's email app
+  var form = document.getElementById("quote-form");
+  var msg = form.querySelector(".form-msg");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = form.elements.name, phone = form.elements.phone;
+    var okName = name.value.trim() !== "";
+    var okPhone = /^[+\d][\d\s-]{7,}$/.test(phone.value.trim());
+    name.classList.toggle("bad", !okName);
+    phone.classList.toggle("bad", !okPhone);
+    if (!okName || !okPhone) {
+      msg.className = "form-msg err";
+      msg.textContent = "Please enter your name and a valid phone number.";
+      return;
+    }
+    var body = "Name: " + name.value + "\nPhone: " + phone.value +
+      "\nService: " + form.elements.need.value +
+      "\nSite location: " + form.elements.location.value;
+    window.location.href = "mailto:nag_associates@outlook.com?subject=" +
+      encodeURIComponent("Quote request - " + form.elements.need.value) +
+      "&body=" + encodeURIComponent(body);
+    msg.className = "form-msg ok";
+    msg.textContent = "Thanks! Your email app will open to send the request. You can also call us directly.";
+    form.reset();
+  });
+})();
+
+</script>
+</body>
+</html>
