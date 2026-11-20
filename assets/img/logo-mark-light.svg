@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Nag &amp; Associates">
-  <circle cx="50" cy="50" r="48" fill="#ffffff"/>
-  <g stroke="#dfe5f2" stroke-width="1" fill="none"><path d="M50 2 V98 M2 50 H98"/><circle cx="50" cy="50" r="36"/></g>
-  <path d="M29 72 L29 28 L71 72 L71 28" fill="none" stroke="#13254a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
-  <g fill="#ffffff" stroke="#13254a" stroke-width="3.5"><circle cx="29" cy="72" r="6"/><circle cx="29" cy="28" r="6"/><circle cx="71" cy="72" r="6"/></g>
-  <circle cx="71" cy="28" r="7.5" fill="#f28c28"/>
+  <polygon points="12,10 34,10 88,90 66,90" fill="#f28c28"/>
+  <rect x="12" y="10" width="22" height="80" fill="#ffffff"/>
+  <rect x="66" y="10" width="22" height="80" fill="#ffffff"/>
 </svg>

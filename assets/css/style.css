@@ -569,3 +569,5 @@ a.c-action::before { background: var(--blue); }
 
 /* New logo wordmark */
 .brand-text { font-weight: 700; letter-spacing: .07em; }
+.brand-mark { border-radius: 0; }
+.brand:hover .brand-mark { transform: none; }
