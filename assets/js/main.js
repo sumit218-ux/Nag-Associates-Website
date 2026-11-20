@@ -1,4 +1,6 @@
 (function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   // Mobile navigation
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('nav');
@@ -13,7 +15,7 @@
     });
   });
 
-  // Header shadow on scroll
+  // Header state, progress bar, back-to-top
   var header = document.getElementById('header');
   var bar = document.getElementById('progressBar');
   var toTop = document.getElementById('toTop');
@@ -23,7 +25,7 @@
     header.classList.toggle('scrolled', y > 10);
     var max = document.documentElement.scrollHeight - window.innerHeight;
     bar.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
-    toTop.classList.toggle('show', y > 600);
+    toTop.classList.toggle('show', y > 700);
     ticking = false;
   }
   window.addEventListener('scroll', function () {
@@ -31,62 +33,99 @@
   }, { passive: true });
   toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-  // Active nav link + reveal on scroll
+  // Years of experience (from 2002)
+  var years = new Date().getFullYear() - 2002;
+  document.querySelectorAll('[data-count="years"]').forEach(function (el) {
+    el.setAttribute('data-count', years);
+    el.textContent = years + '+';
+  });
+
+  // Count-up numbers
+  function countUp(el) {
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var suffix = el.getAttribute('data-suffix') || '';
+    var start = el.hasAttribute('data-plain') ? Math.max(0, target - 40) : 0;
+    if (reduce) { el.textContent = target + suffix; return; }
+    var t0 = null, dur = 1400;
+    function step(t) {
+      if (!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(start + (target - start) * eased) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
   if ('IntersectionObserver' in window) {
+    // Active nav link
     var links = nav.querySelectorAll('a[href^="#"]');
     var spy = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         if (e.isIntersecting) {
-          links.forEach(function (l) {
-            l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id);
-          });
+          links.forEach(function (l) { l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id); });
         }
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
     document.querySelectorAll('section[id]').forEach(function (s) { spy.observe(s); });
 
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var groups = [
-      ['.highlight', ''], ['.card', ''], ['.pill', 'zoom'], ['.stat', 'zoom'],
-      ['.value', ''], ['.entity', ''], ['.timeline li', 'from-right'],
-      ['.vm-card:first-child', 'from-left'], ['.vm-card:last-child', 'from-right'],
-      ['.info-item', 'from-left'], ['.contact-form', 'from-right'],
-      ['.print-list li', 'from-right'], ['.printing-grid > div:first-child', 'from-left'],
-      ['.aadrita-services div', 'zoom'], ['.aadrita-logo', 'zoom'],
-      ['.about-grid > div:first-child', 'from-left'], ['.group-banner > *', ''],
-      ['.section-sub', ''], ['.eyebrow.center', ''], ['.cta-inner > *', '']
-    ];
+    // Reveal on scroll
     var rev = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        if (e.isIntersecting) {
-          var t = e.target;
-          t.classList.add('visible', 'in-view');
-          rev.unobserve(t);
-          // once revealed, drop reveal classes so hover effects work normally
-          if (t.classList.contains('reveal')) {
-            setTimeout(function () {
-              t.classList.remove('reveal', 'visible', 'from-left', 'from-right', 'zoom');
-              t.style.removeProperty('--i');
-            }, 1700);
-          }
+        if (!e.isIntersecting) return;
+        var t = e.target;
+        t.classList.add('visible', 'in-view');
+        rev.unobserve(t);
+        if (t.hasAttribute('data-count')) countUp(t);
+        if (t.classList.contains('reveal')) {
+          setTimeout(function () { t.classList.remove('reveal', 'visible'); t.style.removeProperty('--i'); }, 1600);
         }
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    var sel = '.quote, .stat, .split-head, .about-text > *, .about-figure, .journey li, .rows li, .rows-split > div > .h2, .value, .entities-head > *, .tabs, .panels, .svc, .two-cards .wcard, .center-block > *, .contact-form, .contact-info > *, .cta-card, .footer-cols > div, .band > .container > .mono-label, .band > .container > .h2, .band > .container > .muted';
     if (!reduce) {
-      groups.forEach(function (g) {
-        var els = document.querySelectorAll(g[0]);
-        els.forEach(function (el, idx) {
-          if (el.closest('.hero')) return;
-          el.classList.add('reveal');
-          if (g[1]) el.classList.add(g[1]);
-          var sib = Array.prototype.indexOf.call(el.parentNode.children, el);
-          el.style.setProperty('--i', Math.min(sib, 8));
-          rev.observe(el);
-        });
+      document.querySelectorAll(sel).forEach(function (el) {
+        if (el.closest('.hero')) return;
+        el.classList.add('reveal');
+        var idx = Array.prototype.indexOf.call(el.parentNode.children, el);
+        el.style.setProperty('--i', Math.min(idx, 6));
+        rev.observe(el);
       });
     }
-    // titles underline + timeline line
-    document.querySelectorAll('.section-title, .about-heading.center, .group-name, .timeline').forEach(function (el) { rev.observe(el); });
+    document.querySelectorAll('.journey, [data-count]').forEach(function (el) { rev.observe(el); });
+    document.querySelectorAll('.journey li').forEach(function (li, i) { li.style.setProperty('--i', i); });
+  }
+
+  // Core values: expand cards
+  var values = document.querySelectorAll('.value');
+  values.forEach(function (card) {
+    card.addEventListener('click', function () {
+      values.forEach(function (c) {
+        var on = c === card ? !c.classList.contains('open') : false;
+        c.classList.toggle('open', on);
+        c.querySelector('.plus').setAttribute('aria-expanded', on);
+      });
+    });
+  });
+
+  // Entity tabs
+  var tabs = document.querySelectorAll('.tab');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.classList.toggle('active', on);
+        t.setAttribute('aria-selected', on);
+        var panel = document.getElementById(t.getAttribute('aria-controls'));
+        panel.hidden = !on;
+        panel.classList.toggle('active', on);
+      });
+    });
+  });
+  if (location.hash === '#topogrid' || location.hash === '#aadrita') {
+    var t = document.getElementById('t-' + location.hash.slice(1));
+    if (t) t.click();
   }
 
   // Enquiry form -> WhatsApp or Email (no server needed)
@@ -101,23 +140,24 @@
     var d = new FormData(form);
     var name = (d.get('name') || '').trim();
     var phone = (d.get('phone') || '').trim();
-    if (!name || !phone) {
-      note.textContent = 'Please enter your name and phone number.';
-      return;
-    }
+    if (!name || !phone) { note.textContent = 'Please enter your name and phone number.'; return; }
     note.textContent = '';
-    var text = 'Enquiry from website\n' +
-      'Name: ' + name + '\n' +
-      'Phone: ' + phone + '\n' +
-      'Service: ' + d.get('service') + '\n' +
-      'Message: ' + (d.get('message') || '');
+    var text = 'Enquiry from website\nName: ' + name + '\nPhone: ' + phone + '\nService: ' + d.get('service') + '\nMessage: ' + (d.get('message') || '');
     if (via === 'email') {
-      window.location.href = 'mailto:nag_associates@outlook.com?subject=' +
-        encodeURIComponent('Website enquiry – ' + d.get('service')) +
-        '&body=' + encodeURIComponent(text);
+      window.location.href = 'mailto:nag_associates@outlook.com?subject=' + encodeURIComponent('Website enquiry – ' + d.get('service')) + '&body=' + encodeURIComponent(text);
     } else {
       window.open('https://wa.me/919564295656?text=' + encodeURIComponent(text), '_blank', 'noopener');
     }
+  });
+
+  // Call-back request
+  var cta = document.getElementById('ctaForm');
+  cta.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var input = cta.querySelector('input');
+    var phone = input.value.trim();
+    if (!phone) { input.focus(); input.placeholder = 'Please enter your phone number'; return; }
+    window.open('https://wa.me/919564295656?text=' + encodeURIComponent('Please call me back. My number: ' + phone), '_blank', 'noopener');
   });
 
   document.getElementById('year').textContent = new Date().getFullYear();

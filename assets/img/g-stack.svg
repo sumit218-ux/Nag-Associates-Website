@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-39 -36 79 81">
+<polygon points="-33.3,19.2 0.0,38.4 0.0,30.4 -33.3,11.2" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="33.3,19.2 0.0,38.4 0.0,30.4 33.3,11.2" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="0.0,-8.0 33.3,11.2 0.0,30.4 -33.3,11.2" fill="#fff" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="-33.3,8.0 0.0,27.2 0.0,19.2 -33.3,0.0" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="33.3,8.0 0.0,27.2 0.0,19.2 33.3,0.0" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="0.0,-19.2 33.3,0.0 0.0,19.2 -33.3,0.0" fill="#fff" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="-33.3,-3.2 0.0,16.0 0.0,8.0 -33.3,-11.2" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="33.3,-3.2 0.0,16.0 0.0,8.0 33.3,-11.2" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="0.0,-30.4 33.3,-11.2 0.0,8.0 -33.3,-11.2" fill="#e9f3e4" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
+
+</svg>
