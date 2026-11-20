@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Nag &amp; Associates">
+  <defs><clipPath id="c"><circle cx="50" cy="50" r="46"/></clipPath></defs>
+  <circle cx="50" cy="50" r="48" fill="#ffffff"/>
+  <g clip-path="url(#c)" fill="none" stroke="#7fbf6a" stroke-width="1.6">
+    <path d="M-5 84 C 20 74, 40 92, 62 82 S 95 74, 110 80"/>
+    <path d="M-5 92 C 22 82, 42 100, 64 90 S 95 83, 110 88"/>
+  </g>
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#9a9a9a" stroke-width="1.4"/>
+  <g stroke="#9a9a9a" stroke-width="2" stroke-linecap="round">
+    <line x1="50" y1="4" x2="50" y2="11"/><line x1="50" y1="89" x2="50" y2="96"/>
+    <line x1="4" y1="50" x2="11" y2="50"/><line x1="89" y1="50" x2="96" y2="50"/>
+  </g>
+  <path d="M30 72 V30 L68 72 V36" fill="none" stroke="#111111" stroke-width="9" stroke-linejoin="miter" stroke-linecap="square"/>
+  <g stroke="#e5481f" stroke-width="2" fill="none">
+    <circle cx="68" cy="28" r="6.5"/>
+    <line x1="68" y1="18" x2="68" y2="38"/><line x1="58" y1="28" x2="78" y2="28"/>
+  </g>
+  <circle cx="68" cy="28" r="2.2" fill="#e5481f"/>
+</svg>
