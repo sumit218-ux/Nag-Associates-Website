@@ -83,7 +83,7 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-    var sel = '.quote, .stat, .split-head, .about-text > *, .about-figure, .journey li, .rows li, .rows-split > div > .h2, .value, .entities-head > *, .tabs, .panels, .svc, .two-cards .wcard, .center-block > *, .contact-form, .contact-info > *, .cta-card, .footer-cols > div, .band > .container > .mono-label, .band > .container > .h2, .band > .container > .muted';
+    var sel = '.quote, .stat, .split-head, .about-text > *, .about-figure, .journey li, .rows li, .rows-split > div > .h2, .value, .entities-head > *, .tabs, .panels, .svc, .two-cards .wcard, .center-block > *, .contact-form, .c-action, .loc-card, .cta-card, .footer-cols > div, .band > .container > .mono-label, .band > .container > .h2, .band > .container > .muted';
     if (!reduce) {
       document.querySelectorAll(sel).forEach(function (el) {
         if (el.closest('.hero')) return;
@@ -131,17 +131,15 @@
   // Enquiry form -> WhatsApp or Email (no server needed)
   var form = document.getElementById('contactForm');
   var note = document.getElementById('formNote');
-  var via = 'whatsapp';
-  form.querySelectorAll('button[type="submit"]').forEach(function (b) {
-    b.addEventListener('click', function () { via = b.getAttribute('data-via'); });
-  });
   form.addEventListener('submit', function (ev) {
     ev.preventDefault();
     var d = new FormData(form);
     var name = (d.get('name') || '').trim();
     var phone = (d.get('phone') || '').trim();
-    if (!name || !phone) { note.textContent = 'Please enter your name and phone number.'; return; }
-    note.textContent = '';
+    if (!name || !phone) { note.className = 'form-note err'; note.textContent = 'Please enter your name and phone number.'; return; }
+    var via = d.get('via') || 'whatsapp';
+    note.className = 'form-note ok';
+    note.textContent = via === 'email' ? 'Opening your email app…' : 'Opening WhatsApp…';
     var text = 'Enquiry from website\nName: ' + name + '\nPhone: ' + phone + '\nService: ' + d.get('service') + '\nMessage: ' + (d.get('message') || '');
     if (via === 'email') {
       window.location.href = 'mailto:nag_associates@outlook.com?subject=' + encodeURIComponent('Website enquiry – ' + d.get('service')) + '&body=' + encodeURIComponent(text);
