@@ -566,3 +566,6 @@ a.c-action::before { background: var(--blue); }
 .wa-float { background: #1f9d55; }
 .wa-float:hover { background: #25d366; }
 .to-top:hover { background: var(--tint-saffron); border-color: var(--saffron); }
+
+/* New logo wordmark */
+.brand-text { font-weight: 700; letter-spacing: .07em; }
