@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-134 -58 334 199">
-<polygon points="-119.5,63.0 -8.7,127.0 -8.7,126.0 -119.5,62.0" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="77.9,77.0 -8.7,127.0 -8.7,126.0 77.9,76.0" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="-32.9,12.0 77.9,76.0 -8.7,126.0 -119.5,62.0" fill="#ffffff" stroke="#1a1a1a" stroke-width="0.8" stroke-linejoin="round"/>
-<polygon points="-38.1,22.0 83.1,92.0 83.1,48.0 -38.1,-22.0" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="121.2,70.0 83.1,92.0 83.1,48.0 121.2,26.0" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="0.0,-44.0 121.2,26.0 83.1,48.0 -38.1,-22.0" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="-93.5,53.0 -58.9,73.0 -58.9,72.6 -93.5,52.6" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="0.6" stroke-linejoin="round"/>
-<polygon points="-31.2,57.0 -58.9,73.0 -58.9,72.6 -31.2,56.6" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="0.6" stroke-linejoin="round"/>
-<polygon points="-65.8,36.6 -31.2,56.6 -58.9,72.6 -93.5,52.6" fill="#e9f3e4" stroke="#1a1a1a" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="-119.5,63.0 -8.7,127.0 -8.7,126.0 -119.5,62.0" fill="#f1f1f1" stroke="#14213d" stroke-width="0.8" stroke-linejoin="round"/>
+<polygon points="77.9,77.0 -8.7,127.0 -8.7,126.0 77.9,76.0" fill="#e4e4e4" stroke="#14213d" stroke-width="0.8" stroke-linejoin="round"/>
+<polygon points="-32.9,12.0 77.9,76.0 -8.7,126.0 -119.5,62.0" fill="#ffffff" stroke="#14213d" stroke-width="0.8" stroke-linejoin="round"/>
+<polygon points="-38.1,22.0 83.1,92.0 83.1,48.0 -38.1,-22.0" fill="#f1f1f1" stroke="#14213d" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="121.2,70.0 83.1,92.0 83.1,48.0 121.2,26.0" fill="#e4e4e4" stroke="#14213d" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="0.0,-44.0 121.2,26.0 83.1,48.0 -38.1,-22.0" fill="#ffffff" stroke="#14213d" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="-93.5,53.0 -58.9,73.0 -58.9,72.6 -93.5,52.6" fill="#f1f1f1" stroke="#14213d" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="-31.2,57.0 -58.9,73.0 -58.9,72.6 -31.2,56.6" fill="#e4e4e4" stroke="#14213d" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="-65.8,36.6 -31.2,56.6 -58.9,72.6 -93.5,52.6" fill="#dfe8fa" stroke="#14213d" stroke-width="0.6" stroke-linejoin="round"/>
 <line x1="-38.1" y1="25.0" x2="43.3" y2="72.0" stroke="#9a9a9a" stroke-width="0.8" stroke-linecap="round"/>
 <line x1="-55.4" y1="35.0" x2="15.6" y2="76.0" stroke="#9a9a9a" stroke-width="0.8" stroke-linecap="round"/>
 <line x1="-72.7" y1="45.0" x2="-12.1" y2="80.0" stroke="#9a9a9a" stroke-width="0.8" stroke-linecap="round"/>
 <line x1="-90.1" y1="55.0" x2="-39.8" y2="84.0" stroke="#9a9a9a" stroke-width="0.8" stroke-linecap="round"/>
-<g><rect x="110.2" y="28.0" width="72" height="18" fill="#fff" stroke="#1a1a1a" stroke-width="1"/><text x="118.2" y="41.0" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing=".5" fill="#1a1a1a">A0+ PLOT</text></g>
+<g><rect x="110.2" y="28.0" width="72" height="18" fill="#fff" stroke="#14213d" stroke-width="1"/><text x="118.2" y="41.0" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing=".5" fill="#14213d">A0+ PLOT</text></g>
 </svg>

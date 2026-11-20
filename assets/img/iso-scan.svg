@@ -1,24 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-76 -47 318 185">
-<polygon points="-62.4,36.0 24.2,86.0 24.2,81.0 -62.4,31.0" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="86.6,50.0 24.2,86.0 24.2,81.0 86.6,45.0" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="0.0,-5.0 86.6,45.0 24.2,81.0 -62.4,31.0" fill="#fff" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="-62.4,29.0 24.2,79.0 24.2,74.0 -62.4,24.0" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="86.6,43.0 24.2,79.0 24.2,74.0 86.6,38.0" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="0.0,-12.0 86.6,38.0 24.2,74.0 -62.4,24.0" fill="#fff" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="-62.4,22.0 24.2,72.0 24.2,67.0 -62.4,17.0" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="86.6,36.0 24.2,72.0 24.2,67.0 86.6,31.0" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="0.0,-19.0 86.6,31.0 24.2,67.0 -62.4,17.0" fill="#fff" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="-62.4,15.0 24.2,65.0 24.2,60.0 -62.4,10.0" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="86.6,29.0 24.2,65.0 24.2,60.0 86.6,24.0" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="0.0,-26.0 86.6,24.0 24.2,60.0 -62.4,10.0" fill="#fff" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="-62.4,8.0 24.2,58.0 24.2,53.0 -62.4,3.0" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="86.6,22.0 24.2,58.0 24.2,53.0 86.6,17.0" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="0.0,-33.0 86.6,17.0 24.2,53.0 -62.4,3.0" fill="#e9f3e4" stroke="#1a1a1a" stroke-width="0.9" stroke-linejoin="round"/>
-<polygon points="45.0,94.0 97.0,124.0 97.0,100.0 45.0,70.0" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="149.0,94.0 97.0,124.0 97.0,100.0 149.0,70.0" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="97.0,40.0 149.0,70.0 97.0,100.0 45.0,70.0" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="52.0,70.0 97.0,96.0 97.0,94.0 52.0,68.0" fill="#f1f1f1" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="142.0,70.0 97.0,96.0 97.0,94.0 142.0,68.0" fill="#e4e4e4" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
-<polygon points="97.0,42.0 142.0,68.0 97.0,94.0 52.0,68.0" fill="#dcdcdc" stroke="#1a1a1a" stroke-width="1.1" stroke-linejoin="round"/>
-<g><rect x="131.0" y="76.0" width="93" height="18" fill="#fff" stroke="#1a1a1a" stroke-width="1"/><text x="139.0" y="89.0" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing=".5" fill="#1a1a1a">SCAN · COPY</text></g>
+<polygon points="-62.4,36.0 24.2,86.0 24.2,81.0 -62.4,31.0" fill="#f1f1f1" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="86.6,50.0 24.2,86.0 24.2,81.0 86.6,45.0" fill="#e4e4e4" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="0.0,-5.0 86.6,45.0 24.2,81.0 -62.4,31.0" fill="#fff" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="-62.4,29.0 24.2,79.0 24.2,74.0 -62.4,24.0" fill="#f1f1f1" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="86.6,43.0 24.2,79.0 24.2,74.0 86.6,38.0" fill="#e4e4e4" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="0.0,-12.0 86.6,38.0 24.2,74.0 -62.4,24.0" fill="#fff" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="-62.4,22.0 24.2,72.0 24.2,67.0 -62.4,17.0" fill="#f1f1f1" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="86.6,36.0 24.2,72.0 24.2,67.0 86.6,31.0" fill="#e4e4e4" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="0.0,-19.0 86.6,31.0 24.2,67.0 -62.4,17.0" fill="#fff" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="-62.4,15.0 24.2,65.0 24.2,60.0 -62.4,10.0" fill="#f1f1f1" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="86.6,29.0 24.2,65.0 24.2,60.0 86.6,24.0" fill="#e4e4e4" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="0.0,-26.0 86.6,24.0 24.2,60.0 -62.4,10.0" fill="#fff" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="-62.4,8.0 24.2,58.0 24.2,53.0 -62.4,3.0" fill="#f1f1f1" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="86.6,22.0 24.2,58.0 24.2,53.0 86.6,17.0" fill="#e4e4e4" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="0.0,-33.0 86.6,17.0 24.2,53.0 -62.4,3.0" fill="#dfe8fa" stroke="#14213d" stroke-width="0.9" stroke-linejoin="round"/>
+<polygon points="45.0,94.0 97.0,124.0 97.0,100.0 45.0,70.0" fill="#f1f1f1" stroke="#14213d" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="149.0,94.0 97.0,124.0 97.0,100.0 149.0,70.0" fill="#e4e4e4" stroke="#14213d" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="97.0,40.0 149.0,70.0 97.0,100.0 45.0,70.0" fill="#ffffff" stroke="#14213d" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="52.0,70.0 97.0,96.0 97.0,94.0 52.0,68.0" fill="#f1f1f1" stroke="#14213d" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="142.0,70.0 97.0,96.0 97.0,94.0 142.0,68.0" fill="#e4e4e4" stroke="#14213d" stroke-width="1.1" stroke-linejoin="round"/>
+<polygon points="97.0,42.0 142.0,68.0 97.0,94.0 52.0,68.0" fill="#dcdcdc" stroke="#14213d" stroke-width="1.1" stroke-linejoin="round"/>
+<g><rect x="131.0" y="76.0" width="93" height="18" fill="#fff" stroke="#14213d" stroke-width="1"/><text x="139.0" y="89.0" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing=".5" fill="#14213d">SCAN · COPY</text></g>
 </svg>
