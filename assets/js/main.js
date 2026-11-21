@@ -83,7 +83,7 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-    var sel = '.quote, .stat, .split-head, .about-text > *, .about-figure, .journey li, .rows li, .rows-split > div > .h2, .value, .entities-head > *, .tabs, .panels, .svc, .two-cards .wcard, .center-block > *, .contact-form, .c-action, .loc-card, .cta-card, .footer-cols > div, .band > .container > .mono-label, .band > .container > .h2, .band > .container > .muted';
+    var sel = '.quote, .stat, .client, .split-head, .about-text > *, .about-figure, .journey li, .rows li, .rows-split > div > .h2, .value, .entities-head > *, .tabs, .panels, .svc, .two-cards .wcard, .center-block > *, .contact-form, .c-action, .loc-card, .cta-card, .footer-cols > div, .band > .container > .mono-label, .band > .container > .h2, .band > .container > .muted';
     if (!reduce) {
       document.querySelectorAll(sel).forEach(function (el) {
         if (el.closest('.hero')) return;

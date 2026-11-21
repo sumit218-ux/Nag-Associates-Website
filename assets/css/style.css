@@ -685,3 +685,28 @@ img { height: auto; }
   .chips .chip { font-size: 12px; padding: 8px 12px; }
   .contact-form label { font-size: 12px; }
 }
+
+/* ================= Clients ================= */
+.client-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.client { background: var(--card); border-radius: var(--radius); padding: 18px 18px 20px; display: flex; flex-direction: column; border-top: 4px solid var(--blue); transition: transform .35s var(--ease), box-shadow .35s; }
+.client:nth-child(2) { border-top-color: var(--saffron); }
+.client:nth-child(3) { border-top-color: var(--green); }
+.client:nth-child(4) { border-top-color: var(--blue-2); }
+.client-logo { height: 130px; border-radius: 8px; background: #fff; border: 1px solid var(--line); display: grid; place-items: center; padding: 18px; margin-bottom: 16px; overflow: hidden; }
+.client-logo img { max-width: 100%; max-height: 92px; width: auto; object-fit: contain; }
+.client-logo-text { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; background: var(--tint-blue); border-color: transparent; }
+.client-logo-text span { font-size: 30px; font-weight: 700; letter-spacing: .02em; color: var(--blue); line-height: 1; }
+.client-logo-text small { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--saffron); }
+.client h3 { font-size: 17px; font-weight: 500; line-height: 1.3; margin-bottom: 8px; }
+.client .mono-label { margin: auto 0 0; }
+@media (hover: hover) { .client:hover { transform: translateY(-6px); box-shadow: 0 22px 40px -18px rgba(29,58,138,.35); } }
+@media (max-width: 1000px) { .client-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) {
+  .client-grid { gap: 10px; }
+  .client { padding: 12px 12px 14px; }
+  .client-logo { height: 96px; padding: 12px; margin-bottom: 12px; }
+  .client-logo img { max-height: 64px; }
+  .client-logo-text span { font-size: 22px; }
+  .client-logo-text small { font-size: 10.5px; letter-spacing: .1em; }
+  .client h3 { font-size: 15px; }
+}
