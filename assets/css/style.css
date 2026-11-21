@@ -753,3 +753,6 @@ img { height: auto; }
 }
 .tab.active, .tab.active:hover { background: var(--blue); color: #fff; }
 @media (max-width: 640px) { .footer-tagline { font-size: 11px; letter-spacing: .08em; } }
+.fb-left { display: flex; flex-direction: column; gap: 4px; }
+.credit { color: #8b97b8; font-size: 12px; }
+.credit strong { color: #c9d3ee; font-weight: 500; }
