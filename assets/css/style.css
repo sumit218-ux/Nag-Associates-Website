@@ -710,3 +710,49 @@ img { height: auto; }
   .client-logo-text small { font-size: 10.5px; letter-spacing: .1em; }
   .client h3 { font-size: 15px; }
 }
+
+/* ================= Tribute (About) ================= */
+.tribute { margin: 4px 0 24px; padding: 22px 24px; background: #fff; border-radius: 12px; border-left: 4px solid var(--saffron); box-shadow: 0 14px 30px -22px rgba(19,37,74,.45); }
+.tribute .mono-label { margin-bottom: 8px; }
+.tribute-name { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; color: var(--blue); margin: 0 0 8px !important; }
+.tribute-name span { font-weight: 400; color: var(--muted); font-size: 17px; }
+.tribute p:last-child { color: var(--ink-2); margin: 0; }
+
+/* ================= Clients note ================= */
+.clients-more { margin-top: 18px; color: var(--muted); font-size: 15px; display: flex; align-items: center; gap: 10px; }
+.dot-live { width: 9px; height: 9px; border-radius: 50%; background: var(--saffron); box-shadow: 0 0 0 0 rgba(242,140,40,.6); animation: ping 2s infinite; flex: none; }
+
+/* ================= Compact footer ================= */
+.footer { padding: 56px 0 26px; }
+.footer-main { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; padding-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,.1); }
+.footer-brand .brand { margin: 0; }
+.footer-brand .brand-text { font-size: 20px; }
+.footer-brand .brand-mark { width: 40px; height: 40px; }
+.footer-tagline { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--saffron); margin: 12px 0 18px !important; }
+.footer-contact-list { list-style: none; display: grid; gap: 8px; font-size: 14px; color: #c9d3ee; }
+.footer-contact-list li { display: flex; gap: 10px; align-items: flex-start; }
+.fc-ico { flex: none; width: 20px; font-size: 14px; }
+.footer-group { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; padding: 18px 20px; }
+.footer-group .mono-label { color: var(--saffron) !important; margin-bottom: 12px; }
+.fg-item { display: flex; flex-direction: column; gap: 2px; padding: 10px 0; }
+.fg-item + .fg-item { border-top: 1px solid rgba(255,255,255,.08); }
+.fg-item strong { color: #fff; font-weight: 500; font-size: 15px; }
+.fg-item span { font-size: 12.5px; color: #8b97b8; }
+.footer-nav { display: flex; flex-wrap: wrap; gap: 6px 22px; padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,.1); font-size: 14px; }
+.footer-nav a { color: #c9d3ee; }
+.footer-nav a:hover { color: #fff; }
+.footer-bottom { padding-top: 18px; }
+@media (max-width: 1000px) { .footer-main { grid-template-columns: 1fr; gap: 24px; } }
+@media (max-width: 640px) {
+  .footer { padding-top: 44px; }
+  .footer-brand .brand-text { font-size: 17px; }
+  .footer-nav { gap: 2px 18px; }
+  .footer-nav a { padding: 8px 0; }
+  .tribute { padding: 18px; }
+  .tribute-name { font-size: 19px; }
+}
+.tab.active, .tab.active:hover { background: var(--blue); color: #fff; }
+@media (max-width: 640px) { .footer-tagline { font-size: 11px; letter-spacing: .08em; } }
+.fb-left { display: flex; flex-direction: column; gap: 4px; }
+.credit { color: #8b97b8; font-size: 12px; }
+.credit strong { color: #c9d3ee; font-weight: 500; }
