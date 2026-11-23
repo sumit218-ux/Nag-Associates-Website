@@ -756,6 +756,8 @@ img { height: auto; }
 .fb-left { display: flex; flex-direction: column; gap: 4px; }
 .credit { color: #8b97b8; font-size: 12px; }
 .credit strong { color: #c9d3ee; font-weight: 500; }
+.credit-link { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(201,211,238,.4); }
+.credit-link:hover strong { color: #ffffff; }
 
 /* ================= Slim contact panel ================= */
 #contact .h2 { margin-bottom: 26px; }
